@@ -22,6 +22,7 @@ export default function App() {
         console.log(weatherCondition);
       });
   };
+  
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((position) => {
       fetchWeather(position.coords.latitude, position.coords.longitude);
